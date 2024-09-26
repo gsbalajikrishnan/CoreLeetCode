@@ -31,8 +31,48 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
  */
 
 #include<stdio.h>
+#include<stdlib.h>
+#define MAX_SIZE 10
+int*  twoSum(int* nums, int numsSize, int target, int* returnSize);
+
 int main()
 {
-    printf("Sum of two elements");
-    return 0;
+    int nums[MAX_SIZE];
+    //int numsSize = sizeof(nums)/sizeof(nums[0]);
+    int target = 9;
+    int returnSize;
+    int *index;
+    for (size_t i = 0; i < MAX_SIZE; i++)
+    {
+        /* code */
+    }
+    
+
+    index = twoSum(&nums,MAX_SIZE,target,&returnSize);
+    if(index!=NULL && returnSize==2)
+    {
+        printf("[%d,%d]",index[0],index[1]);
+        free(index);
+    }
+}
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
+    int* indices = (int*)malloc(numsSize * sizeof(int));
+    int i, j;
+    if (indices == NULL) {
+        return NULL;
+    }
+    *returnSize = 0;
+    for (i = 0; i < numsSize; i++) {
+        for (j = i + 1; j < numsSize; j++) {
+            if (nums[i] + nums[j] == target) {
+                indices[0] = i;
+                indices[1] = j;
+                *returnSize = 2;
+            }
+        }
+    }
+    return indices;
 }
