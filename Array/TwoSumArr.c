@@ -43,14 +43,14 @@ int main()
     int returnSize;
     int *index;
     printf("Get the array element:");
-    for (size_t i = 0; i < MAX_SIZE)
+    for (size_t i = 0; i < MAX_SIZE;i++)
     {
         scanf("%d\n",&nums[i]);
     }
     scanf("%d",&target);
     
 
-    index = twoSum(&nums,MAX_SIZE,target,&returnSize);
+    index = twoSum(nums,MAX_SIZE,target,&returnSize);
     if(index!=NULL && returnSize==2)
     {
         printf("[%d,%d]",index[0],index[1]);
