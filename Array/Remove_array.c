@@ -26,7 +26,7 @@ int removeElement(int* nums, int numsSize, int val)
         {
             if(nums[j]==val)
             {
-                for(k=j;k<numsSize;k++)
+                for(k=j;k<numsSize-1;k++)
                 {
                     nums[k] = nums[k+1];
                 }
