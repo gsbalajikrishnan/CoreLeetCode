@@ -14,6 +14,14 @@ void reverseWord(char name[])
         j--;
         /* code */
     }
+    /* 
+    int i, len = strlen(name);
+    for(i=0;i<len / 2;i++)
+    {
+        char temp = name[i];
+        name[i] = name[len-i-1];
+        name[len-i-1] = temp;
+    } */
 }
 int main()
 {
@@ -24,6 +32,7 @@ int main()
 
     while (i<=j)
     {
+ 
         if(name[i]==' ' || name[i]=='\0')
         {
             word[wordIndex] = '\0';

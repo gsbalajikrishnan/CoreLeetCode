@@ -14,7 +14,6 @@ int main()
     size = sizeof(num)/sizeof(num[0]);
     ret = removeElement(num,size,val);
     printf("\n%d",ret);
-
     return 0;
 }
 int removeElement(int* nums, int numsSize, int val) 
