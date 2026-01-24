@@ -20,7 +20,7 @@ int searchInsert(int* nums, int numsSize, int target); // Correct declaration
 int main()
 {
     int nums[] = {1, 3, 5, 6};
-    int target = 2;
+    int target = 7;
     int numsSize = sizeof(nums) / sizeof(nums[0]);
 
     int index = searchInsert(nums, numsSize, target); // Now valid!

@@ -15,7 +15,7 @@ int main()
     uint8_t bit4 = ((num >> 4) & 1);
     /* // Clear the bit 
     num = num & ~(1<<3);
-    num = num & ~(1<<4);
+    num = num & ~(1<<4); 
     // Set the bit
     
     num = (num | bit3<<4);

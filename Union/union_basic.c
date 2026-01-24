@@ -22,7 +22,13 @@ int main()
     union crypto cry;
     cry.rs.num = 10;
     cry.rs.max = 20;
+    //cry.ec.max= 30;
+    //cry.ec.num = 50;
     printf("%d ",sizeof(cry));
     printf("%d ",cry.rs.num);
+    printf("%d ", cry.rs.max);
+    printf("%d ",cry.ec.num);
+    printf("%d ", cry.ec.max);
+    
     return 0;
 }

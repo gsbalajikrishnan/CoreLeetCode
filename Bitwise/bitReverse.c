@@ -30,7 +30,7 @@ void printBits(uint8_t bits)
     int i=0;
     for(i=7;i>=0;i--)
     {
-        printf("%d ",((bits>>i)&1)?1:0);
+        printf("%d ",((bits>>i)&1)); // ((bits & (1<<i))?1:0)
         
     }
 }
