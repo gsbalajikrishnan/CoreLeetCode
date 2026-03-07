@@ -42,7 +42,11 @@ int main() {
     printf("Before add: \n %s \n %s \n",str1,str2);
     char *value = addTwobinary(str1,str2);
     printf("After add: %s",value);
+<<<<<<< HEAD
     free(value);
     
+=======
+    free(value);   
+>>>>>>> feature/leetCode_C_Array
     return 0;
 }

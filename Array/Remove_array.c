@@ -10,10 +10,16 @@ int removeElement(int* nums, int numsSize, int val);
 int main()
 {
     int num[]={0,1,2,2,3,0,4,2};
-    int val=2,ret,size;
+    int val=2,ret,size,i;
     size = sizeof(num)/sizeof(num[0]);
     ret = removeElement(num,size,val);
     printf("\n%d",ret);
+
+    for(i=0;i<ret;i++)
+    {
+        printf("%d ",num[i]);
+    }
+    //printf("\n%d",ret);
     return 0;
 }
 int removeElement(int* nums, int numsSize, int val) 
@@ -25,7 +31,7 @@ int removeElement(int* nums, int numsSize, int val)
         {
             if(nums[j]==val)
             {
-                for(k=j;k<numsSize-1;k++)
+                for(k=j;k<numsSize;k++)
                 {
                     nums[k] = nums[k+1];
                 }

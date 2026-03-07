@@ -4,15 +4,16 @@
 #include "strucBasic.h"
 #include <stddef.h>
 int data;
-union aes
+struct aes
 {
     int iv;
     char mode[20];
+    char b;
     float key;
     
     /* data */
 };
-void func(union aes *a)
+void func(struct aes *a)
 {
     a->iv = 20;
     a->key = 190585;
@@ -21,12 +22,12 @@ void func(union aes *a)
 };
 int main()
 {
-    union aes ae;
+    struct aes ae;
     ae.iv = 10;
     strcpy(ae.mode, "CBC");
     
     ae.key = 12345;
-    //data = 10;
+    data = 10;
     printf("Before : %d\n", data);
 
     printf("%d\n", ae.iv);

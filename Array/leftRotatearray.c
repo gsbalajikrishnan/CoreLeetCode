@@ -11,6 +11,7 @@ int main()
         leftShiftArray(arr,size);
         //rightShiftArray(arr,size);
     }
+<<<<<<< HEAD
     for (i = 0; i<size; i++)
     {
         printf("%d ",arr[i]); /* code */
@@ -23,9 +24,30 @@ int main()
         rightShiftArray(arr,size);
     }
     for (i = 0; i<size; i++)
+=======
+<<<<<<< Updated upstream
+    for (i = 0; i <size; i++)
+>>>>>>> feature/leetCode_C_Array
     {
         printf("%d ",arr[i]); /* code */
     }
+=======
+    for (i = 0; i<size; i++)
+    {
+        printf("%d ",arr[i]); /* code */
+    }
+    
+    // printf("\n");
+    // for(i=0;i<Shift;i++)
+    // {
+    //     //leftShiftArray(arr,size);
+    //     rightShiftArray(arr,size);
+    // }
+    // for (i = 0; i<size; i++)
+    // {
+    //     printf("%d ",arr[i]); /* code */
+    // }
+>>>>>>> Stashed changes
     
     return 0;
 }
@@ -38,6 +60,12 @@ void leftShiftArray(int arr[],int size)
         arr[i]=arr[i+1];
     }
     arr[size-1] = temp;
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+}
+=======
+>>>>>>> feature/leetCode_C_Array
 }
 void rightShiftArray(int arr[],int size)
 {
@@ -48,4 +76,9 @@ void rightShiftArray(int arr[],int size)
         arr[i]=arr[i-1];
     }
     arr[0] = temp;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> Stashed changes
+>>>>>>> feature/leetCode_C_Array

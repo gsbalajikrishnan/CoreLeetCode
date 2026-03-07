@@ -1,1 +1,1 @@
-int data=10;
+extern int data;
