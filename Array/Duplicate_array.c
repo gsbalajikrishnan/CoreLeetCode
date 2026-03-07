@@ -41,6 +41,7 @@ int removeDuplicates(int* nums, int numsSize)
         {
             if(nums[i]==nums[j])
             {
+                
                 for(k=j;k<numsSize-1;k++)
                 {
                     nums[k]=nums[k+1];
