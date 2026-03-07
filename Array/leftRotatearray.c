@@ -10,12 +10,10 @@ int main()
     {
         leftShiftArray(arr,size);
     }
-<<<<<<< Updated upstream
     for (i = 0; i <size; i++)
     {
         printf("%d ",arr[i]); /* code */
     }
-=======
     for (i = 0; i<size; i++)
     {
         printf("%d ",arr[i]); /* code */
@@ -31,7 +29,6 @@ int main()
     // {
     //     printf("%d ",arr[i]); /* code */
     // }
->>>>>>> Stashed changes
     
     return 0;
 }
@@ -44,9 +41,7 @@ void leftShiftArray(int arr[],int size)
         arr[i]=arr[i+1];
     }
     arr[size-1] = temp;
-<<<<<<< Updated upstream
 }
-=======
 }
 void rightShiftArray(int arr[],int size)
 {
@@ -58,4 +53,3 @@ void rightShiftArray(int arr[],int size)
     }
     arr[0] = temp;
 }
->>>>>>> Stashed changes

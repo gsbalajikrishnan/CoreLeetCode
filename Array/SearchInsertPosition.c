@@ -40,14 +40,9 @@ int searchInsert(int* nums, int numsSize, int target)
             low=mid+1;
         }
         else
-<<<<<<< Updated upstream
         {
             high=mid-1;
         }
-=======
-        
-            high = mid - 1;
->>>>>>> Stashed changes
     }
     return low;
     
