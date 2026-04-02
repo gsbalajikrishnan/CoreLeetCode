@@ -13,16 +13,11 @@ int main()
     int val=2,ret,size,i;
     size = sizeof(num)/sizeof(num[0]);
     ret = removeElement(num,size,val);
-<<<<<<< Updated upstream
-    printf("\n%d",ret);
-
-=======
     for(i=0;i<ret;i++)
     {
         printf("%d ",num[i]);
     }
     //printf("\n%d",ret);
->>>>>>> Stashed changes
     return 0;
 }
 int removeElement(int* nums, int numsSize, int val) 
