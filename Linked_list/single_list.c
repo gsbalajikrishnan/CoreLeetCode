@@ -7,7 +7,6 @@ typedef struct Node
     struct Node *link;
     /* data */
 } Node;
-
 Node *create_new_node(int new_data) {
     Node *new_node = malloc(sizeof(Node));
     if(new_node==NULL) {
