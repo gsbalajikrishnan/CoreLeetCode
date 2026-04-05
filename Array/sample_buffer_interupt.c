@@ -84,7 +84,7 @@ void uart_write(uint8_t data)
 
 void uart_write_string(char *str)
 {
-    while(*str)
+    while(*str!='\0')
     {
         uart_write(*str++);
     }
