@@ -20,23 +20,38 @@ int main()
     //printf("\n%d",ret);
     return 0;
 }
-int removeElement(int* nums, int numsSize, int val) 
+// int removeElement(int* nums, int numsSize, int val) 
+// {
+//     int i,j,k;
+//     for(i=0;i<numsSize;i++)
+//     {
+//         for(j=i;j<numsSize;j++)
+//         {
+//             if(nums[j]==val)
+//             {
+//                 for(k=j;k<numsSize;k++)
+//                 {
+//                     nums[k] = nums[k+1];
+//                 }
+//                 numsSize--;
+//                 j--;
+//             }
+//         }
+//     }
+//     return numsSize;       
+// }
+
+int removeElement(int* nums, int numsSize, int val)
 {
-    int i,j,k;
-    for(i=0;i<numsSize;i++)
+    int i, k = 0;
+
+    for(i = 0; i < numsSize; i++)
     {
-        for(j=i;j<numsSize;j++)
+        if(nums[i] != val)
         {
-            if(nums[j]==val)
-            {
-                for(k=j;k<numsSize;k++)
-                {
-                    nums[k] = nums[k+1];
-                }
-                numsSize--;
-                j--;
-            }
+            nums[k++] = nums[i];
         }
     }
-    return numsSize;       
+
+    return k;
 }

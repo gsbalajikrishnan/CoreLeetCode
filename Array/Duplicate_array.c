@@ -32,25 +32,32 @@ int main()
     }
     return 0;
 }
-int removeDuplicates(int* nums, int numsSize) 
-{
-    int i,j,k;
-    for(i=0;i<numsSize;i++)
-    {
-        for(j=i+1;j<numsSize;j++)
-        {
-            if(nums[i]==nums[j])
-            {
-                
-                for(k=j;k<numsSize-1;k++)
-                {
-                    nums[k]=nums[k+1];
-                }
-                numsSize--;
-                j--;
+// int removeDuplicates(int* nums, int numsSize) 
+// {
+//     int i,j,k;
+//     for(i=0;i<numsSize;i++)
+//     {
+//         for(j=i+1;j<numsSize;j++)
+//         {
+//             if(nums[i]==nums[j])
+//             {                
+//                 for(k=j;k<numsSize-1;k++)
+//                 {
+//                     nums[k]=nums[k+1];
+//                 }
+//                 numsSize--;
+//                 j--;
+//             }
+//         }
+//     }
+//     return numsSize;
+// }
+int removeDuplicates(int* nums, int numsSize) {
+    int i,j,k=0;
+    for(i=0;i<numsSize;i++) {
+            if(nums[i]!=nums[i+1]) {
+                nums[k++] = nums[i];
             }
         }
-    }
-
-    return numsSize;
-}
+    return k;
+} 

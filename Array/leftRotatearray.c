@@ -42,7 +42,6 @@ void leftShiftArray(int arr[],int size)
     }
     arr[size-1] = temp;
 }
-}
 void rightShiftArray(int arr[],int size)
 {
     int i;
