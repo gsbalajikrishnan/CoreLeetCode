@@ -5,12 +5,10 @@
 #include<stdint.h>
 int main()
 {
-    uint8_t value = 200;
-    for(uint8_t i=8;i>0;i--)
+    int8_t value = 20;
+    for(int8_t i=7;i>=0;i--)
     {
-        printf("%d ",(value & (1<<i))?1:0);
-    }
-    
+        printf("%d",((value>>i)&1));
+    }    
     return 0;
-
 }
