@@ -12,15 +12,15 @@ int main()
 uint32_t reverseBits(uint32_t n) {
     uint32_t rev_bits = 0;
     uint32_t i=0;
-        for(i=0;i<32;i++)
+        for(i=0;i<8;i++)
         {
-            rev_bits <<= 1;
-            rev_bits|=(n&1);
-            // rev = rev<<1;
-            // if((n&1)==1)
-            // {
-            //     rev=rev^1;
-            // }
+            //rev_bits <<= 1;
+            //rev_bits|=(n&1);
+            rev_bits = rev_bits<<1;
+            if((n&1)==1)
+            {
+                rev_bits=rev_bits^1;
+            }
             n=n>>1;
         }
     return rev_bits;
@@ -28,7 +28,7 @@ uint32_t reverseBits(uint32_t n) {
 void printBits(uint32_t bits)
 {
     int i=0;
-    for(i=31;i>=0;i--)
+    for(i=7;i>=0;i--)
     {
         printf("%d",((bits>>i)&1));
     }
