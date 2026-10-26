@@ -53,7 +53,7 @@ int main()
 //     return numsSize;
 // }
 int removeDuplicates(int* nums, int numsSize) {
-    int i,j,k=0;
+    int i,k=0;
     for(i=0;i<numsSize;i++) {
             if(nums[i]!=nums[i+1]) {
                 nums[k++] = nums[i];
